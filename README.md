@@ -1,4 +1,4 @@
-# Responsive Header for MOFA using React JS
+# Header for MOFA using React JS
 This project is a single page web built with React JS framework. I created this project as an exercise to develop front end skills
 
 ## Table of contents
@@ -25,7 +25,7 @@ This project is a single page web built with React JS framework. I created this 
 
 ### Screenshot
 
-![Design overview for Vangia Cosmetics landing page](./src/images/header-vangia.png)
+![Result](./src/images/header-view.png)
 
 ### Links
 - [Live Site URL](https://vangia-front-end-web-git-main-shabrina12.vercel.app/)
@@ -46,21 +46,17 @@ This project is a single page web built with React JS framework. I created this 
 
 ### What I learned
 
-I learned a simple way to add slider function in testimonial section using swiper js library
 
 Code snippets, see below:
 ```js
 ```
 
-![Overview for testimonials section](./src/images/testimonials.png)
-
 
 ### Continued development
-The development of this project can be continued by adding functionality to the cart, and implementing infinite scrolling in the product section
+The development of this project will be continue by adding features to make the web responsive
 
 ### Useful resources
 - [UI/UX Design Resources](https://dribbble.com/) - This website provide many UI/UX design some are free. I really liked this website and will use it going forward.
-
 
 
 ## Author
