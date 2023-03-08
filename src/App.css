@@ -1,32 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
 .App {
-  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 1rem 4rem;
+  color: white;
+  overflow-x: hidden;
+  background: linear-gradient(
+    to right,
+    black 0%,
+    black 70%,
+    white 70%,
+    white 30%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*---------------------NAVBAR---------------------*/
+nav {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+.nav-links li {
+  cursor: pointer;
+}
+.nav-links li:hover {
+  border-bottom: 1px solid white;
+}
+
+/*---------------------HEADER---------------------*/
+header {
+  display: flex;
+}
+
+/*---------------------LEFT SIDE---------------------*/
+.left-side {
+  width: 70%;
+}
+.left-side .title1-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.left-side .star-3 {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.left-side .star-2 {
+  position: relative;
+  bottom: 80px;
+  right: 20px;
+}
+.left-side h1 {
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 140%;
+  margin: 0
+}
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 85%;
+  margin-top: 2rem;
+}
+.subtitle-container .line {
+  width: 203px;
+  height: 0px;
+  border: 2px solid #FFFFFF;
+}
+.subtitle-container p {
+  width: 50%;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 200%;
+  text-align: justify;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
+/*---------------------MENU---------------------*/
+.menu-container {
+  margin-top: 4rem;
+  display: flex;
+  width: 60%;
+  gap: 2rem;
+}
+.menu-container div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  height: 100px;
+}
+.menu-container div:hover {
+  cursor: pointer;
+  background-color: #252424;
+}
+.menu-about {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/*----------------------RIGHT SIDE-----------------*/
+.right-side {
+  color: black;
+  width: 30%;
 }
+.outer-oval {
+  border: 3px solid #D1D1D1;
+  position: relative;
+  top: 5%; /*atau top: 50px*/
+  left: -50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 500px;
+  border-radius: 90% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1;
+}
+.oval {
+  display: flex;
+  justify-content: center;
+  background-color: #D1D1D1;
+  width: 400px;
+  height: 460px;
+  border-radius: 90% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 2;
+}
+.oval img {
+  position: relative;
+  width: auto;
+  height: 120%;
+  bottom: 20%;
+}
+.outer-rectangle {
+  border: 3px solid black;
+  position: relative;
+  bottom: 12%; /*atau top: 50px*/
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 243px;
+  z-index: 4;
+}
+.rectangle {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 210px;
+  height: 223px;
+  z-index: 5;
+}
+.rectangle img {
+  position: relative;
+  width: auto;
+  left: 8%; 
+  height: 160%;
+  bottom: 60%;
+}
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.social-container img {
+  cursor: pointer;
+}
+
 
 @keyframes App-logo-spin {
   from {
