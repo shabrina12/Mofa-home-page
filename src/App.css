@@ -37,6 +37,9 @@ nav h1 {
 .nav-links li:hover {
   border-bottom: 1px solid white;
 }
+.navbar-menu-logo {
+  color: black;
+}
 
 /*---------------------HEADER---------------------*/
 header {
@@ -65,7 +68,7 @@ header {
 }
 .left-side h1 {
   font-weight: 700;
-  font-size: 88px;
+  font-size: 5.5rem;
   line-height: 140%;
   margin: 0
 }
@@ -77,7 +80,7 @@ header {
   margin-top: 2rem;
 }
 .subtitle-container .line {
-  width: 203px;
+  width: 30%;
   height: 0px;
   border: 2px solid #FFFFFF;
 }
@@ -128,6 +131,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: 100%;
+  height: 50%;  */
+  padding: 1rem;
   width: 440px;
   height: 500px;
   border-radius: 90% / 100%;
@@ -139,8 +145,8 @@ header {
   display: flex;
   justify-content: center;
   background-color: #D1D1D1;
-  width: 400px;
-  height: 460px;
+  width: 100%; 
+  height: 100%;
   border-radius: 90% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -148,28 +154,33 @@ header {
 }
 .oval img {
   position: relative;
-  width: auto;
+  width: auto; 
   height: 120%;
   bottom: 20%;
+  /* max-width: 100%;  
+  display: block; */
 }
 .outer-rectangle {
   border: 3px solid black;
   position: relative;
-  bottom: 12%; /*atau top: 50px*/
-  left: 20%;
+  bottom: 12%; 
+  left: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 230px;
   height: 243px;
+  padding: 0.5rem;
+  /* width: 60%;
+  height: 25%; */
   z-index: 4;
 }
 .rectangle {
   display: flex;
   justify-content: center;
   background-color: black;
-  width: 210px;
-  height: 223px;
+  width: 100%; 
+  height: 100%; 
   z-index: 5;
 }
 .rectangle img {
@@ -187,6 +198,114 @@ header {
 }
 .social-container img {
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+  .App {
+    padding: 1rem 4rem;
+    background: linear-gradient(
+      to bottom,
+      black 0%,
+      black 70%,
+      white 70%,
+      white 30%
+    );
+  }
+  header {
+    flex-direction: column;
+  }
+  .left-side, .right-side,
+  .subtitle-container {
+    width: 100%;
+  }
+  .navbar-menu-logo {
+    color: white;
+  }
+  .outer-oval {
+    top: 100px; 
+    left: 0;
+    width: 60%;
+    height: 450px; 
+  }  
+  .oval img {
+    max-width: 100%; 
+  }
+  .outer-rectangle {
+    bottom: 50px; 
+    left: 50%;
+    width: 30%;
+    height: 213px;
+  }
+  .rectangle img {
+    max-width: 120%;
+    left: 12%; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left-side h1 {
+    font-size: 4rem;
+  }
+  .left-side .title1-container {
+    gap: 1rem;
+  }
+  .subtitle-container p {
+    width: 70%;
+  }
+  .menu-container {
+    width: 100%;
+  }
+  .menu-container div {
+    justify-content: flex-start;
+  }
+  .outer-oval {
+    width: 70%;
+    height: 400px; 
+  } 
+  .outer-rectangle {
+    width: 35%;
+    height: 183px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-side h1 {
+    font-size: 3.5rem;
+  }
+  .left-side .title1-container {
+    margin-top: 2rem;
+  }
+  .subtitle-container {
+    flex-direction: column;
+  }
+  .subtitle-container .line,
+  .subtitle-container p {
+    width: 100%;
+  }
+  .outer-oval {
+    top: 60px; 
+    left: -10%;
+    width: 80%;
+    height: 300px; 
+  } 
+  .outer-rectangle {
+    bottom: 60px; 
+    width: 40%;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    background: black;
+  }
+  .left-side h1 {
+    font-size: 3rem;
+  }
+  .outer-oval, .outer-rectangle {
+    display: none;
+  }
 }
 
 

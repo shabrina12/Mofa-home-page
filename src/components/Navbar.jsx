@@ -11,7 +11,7 @@ const Navbar = () => {
             <li>About</li>
             <li>Product</li>
         </ul>
-        <AiOutlineMenu style={{'cursor': 'pointer'}} color='black' fontSize={27}/>
+        <AiOutlineMenu style={{'cursor': 'pointer'}} className='navbar-menu-logo' fontSize={27}/>
         {/* <div>
             <Link to='/'>Home</Link>
             <Link to='/'>About</Link>
