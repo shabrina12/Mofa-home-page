@@ -21,7 +21,6 @@ This project is a single page web built with React JS framework. I created this 
 ### The challenge
 
 - Build out the project to the designs provided
-- Adding slider for the testimonial section
 
 ### Screenshot
 
@@ -56,7 +55,7 @@ Code snippets, see below:
 The development of this project will be continue by adding features to make the web responsive
 
 ### Useful resources
-- [UI/UX Design Resources](https://dribbble.com/) - This website provide many UI/UX design some are free. I really liked this website and will use it going forward.
+- [Dribble](https://dribbble.com/) - This website provide many UI/UX design some are free. I really liked this website and will use it going forward.
 
 
 ## Author
