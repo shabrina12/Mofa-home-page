@@ -27,7 +27,7 @@ This project is a single page web built with React JS framework. I created this 
 ![Result](./src/images/header-view.png)
 
 ### Links
-- [Live Site URL](https://vangia-front-end-web-git-main-shabrina12.vercel.app/)
+- [Live Site URL](https://mofa-home-page.vercel.app/)
 
 ### Credit
 - [Figma Design i used for this project is created by Capi Creative](https://dribbble.com/shots/19624071-Mofa-Ecommerce-Hero-Section-Concept)
