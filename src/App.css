@@ -219,6 +219,9 @@ header {
   .subtitle-container {
     width: 100%;
   }
+  .subtitle-container p {
+    width: 70%;
+  }
   .navbar-menu-logo {
     color: white;
   }
@@ -249,9 +252,6 @@ header {
   }
   .left-side .title1-container {
     gap: 1rem;
-  }
-  .subtitle-container p {
-    width: 70%;
   }
   .menu-container {
     width: 100%;
