@@ -45,9 +45,43 @@ This project is a single page web built with React JS framework. I created this 
 
 ### What I learned
 
+I learned how to code a design like the following image using css
+![Challenge 1](./src/images/challenge-1.png)
 
 Code snippets, see below:
-```js
+```css
+.outer-oval {
+  border: 3px solid #D1D1D1;
+  position: relative;
+  top: 5%; 
+  left: -50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 500px;
+  border-radius: 90% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1;
+}
+.oval {
+  display: flex;
+  justify-content: center;
+  background-color: #D1D1D1;
+  width: 400px;
+  height: 460px;
+  border-radius: 90% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 2;
+}
+.oval img {
+  position: relative;
+  width: auto;
+  height: 120%;
+  bottom: 20%;
+}
 ```
 
 
