@@ -200,8 +200,7 @@ header {
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1170px) {
   .App {
     padding: 1rem 4rem;
     background: linear-gradient(
@@ -219,9 +218,6 @@ header {
   .subtitle-container {
     width: 100%;
   }
-  .subtitle-container p {
-    width: 70%;
-  }
   .navbar-menu-logo {
     color: white;
   }
@@ -229,7 +225,7 @@ header {
     top: 100px; 
     left: 0;
     width: 60%;
-    height: 450px; 
+    height: 550px; 
   }  
   .oval img {
     max-width: 100%; 
@@ -237,7 +233,7 @@ header {
   .outer-rectangle {
     bottom: 50px; 
     left: 50%;
-    width: 30%;
+    width: 25%;
     height: 213px;
   }
   .rectangle img {
@@ -246,7 +242,22 @@ header {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .subtitle-container p {
+    width: 70%;
+  }
+  .outer-oval {
+    height: 450px; 
+  }  
+  .outer-rectangle {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
   .left-side h1 {
     font-size: 4rem;
   }
@@ -255,9 +266,6 @@ header {
   }
   .menu-container {
     width: 100%;
-  }
-  .menu-container div {
-    justify-content: flex-start;
   }
   .outer-oval {
     width: 70%;
@@ -294,6 +302,14 @@ header {
     width: 40%;
     height: 140px;
   }
+  .left-side .star-3 {
+    bottom: 80px;
+    right: -80px;
+  }
+  .left-side .star-2 {
+    bottom: 150px;
+    right: -70px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -306,14 +322,7 @@ header {
   .outer-oval, .outer-rectangle {
     display: none;
   }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .social-container {
+    margin-top: 2rem;
   }
 }
